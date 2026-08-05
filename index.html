@@ -489,10 +489,10 @@
                 <div class="w-32 h-2 bg-red-600 mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
                 <!-- Date & Time Card -->
                 <div class="glass-card p-8 rounded-[2.5rem] text-center shadow-lg border-b-8 border-b-red-500" data-aos="zoom-in">
-                    <div class="text-6xl mb-4">📅</div>
+                    <img src="calendario.png" alt="" aria-hidden="true" class="w-[60px] h-[60px] object-contain mx-auto mb-4">
                     <h3 class="text-2xl font-western text-amber-900 mb-2">¿Cuándo?</h3>
                     <p class="font-bold text-gray-800 text-xl">Domingo, 23 de Agosto</p>
                     <p class="text-red-600 font-bold text-lg mt-1">10:30 AM (Hora de la Aventura)</p>
@@ -511,18 +511,6 @@
                     </a>
                 </div>
 
-                <!-- Gift Registry Card -->
-                <div class="glass-card p-8 rounded-[2.5rem] text-center shadow-lg border-b-8 border-b-amber-800" data-aos="zoom-in"
-                    data-aos-delay="300">
-                    <div class="text-6xl mb-4">🎁</div>
-                    <h3 class="text-2xl font-western text-amber-900 mb-2">Lluvia de Sobres</h3>
-                    <p class="text-gray-700 text-sm mb-4">Tu presencia es nuestro mejor regalo. Si deseas obsequiarnos un detalle, dispondremos de
-                        buzón de sobres o regalo libre.</p>
-                    <div class="bg-amber-100 p-3 rounded-2xl border border-amber-300">
-                        <span class="block text-xs font-bold text-amber-800 uppercase">Mesa de Regalos / Código</span>
-                        <span class="text-red-600 font-western text-lg">#MAGNUM2026</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -534,7 +522,7 @@
                 <div class="absolute top-3 right-4 text-5xl opacity-20">🤠</div>
                 <h3 class="text-3xl md:text-4xl font-western text-center text-yellow-300 mb-2">¡Confirma tu Asistencia!</h3>
                 <p class="text-center text-amber-200 font-kids text-sm mb-8">Selecciona tu respuesta para enviar el mensaje directamente al equipo de
-                    Magnum Gonzalo antes del 15 de Noviembre</p>
+                    Magnum Gonzalo antes del 23 de Agosto</p>
 
                 <!-- -->
                 <form id="rsvpForm" class="space-y-5">
@@ -793,9 +781,9 @@
             // WhatsApp Message Construction without guest name
             let waText = ``;
             if (attendance === 'si') {
-                waText += `🤠 *¡Hola! Confirmo mi asistencia* al Cumpleaños de Magnum Gonzalo 🎉✨\n`;
+                waText += `🤠 *¡Hola! Confirmo mi asistencia* 🎉✨\n`;
             } else {
-                waText += `😢 *¡Hola! Lamentablemente no podré asistir* al Cumpleaños de Magnum Gonzalo.\n`;
+                waText += `😢 *¡Hola! Lamentablemente no podré asistir.* \n`;
             }
 
             if (message) {
